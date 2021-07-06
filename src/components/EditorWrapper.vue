@@ -56,6 +56,14 @@
 					<MenuBubble v-if="!readOnly && isRichEditor"
 						:editor="tiptap"
 						:file-path="relativePath" />
+					<EmojiSuggestions v-if="!readOnly && isRichEditor"
+						:emoji-query="emojiQuery"
+						:emoji-range="emojiRange"
+						:filtered-emojis="filteredEmojis"
+						:navigated-emoji-index="navigatedEmojiIndex"
+						:emoji-rect="emojiRect"
+						:insert-emoji="insertEmoji"
+						@focus="tiptap.focus()" />
 					<EditorContent v-show="initialLoading"
 						class="editor__content"
 						:editor="tiptap" />
@@ -95,6 +103,7 @@ export default {
 	name: 'EditorWrapper',
 	components: {
 		EditorContent,
+		EmojiSuggestions: () => import(/* webpackChunkName: "editor-rich" */'./EmojiSuggestions'),
 		MenuBar: () => import(/* webpackChunkName: "editor-rich" */'./MenuBar'),
 		MenuBubble: () => import(/* webpackChunkName: "editor-rich" */'./MenuBubble'),
 		ReadOnlyEditor: () => import(/* webpackChunkName: "editor" */'./ReadOnlyEditor'),
@@ -171,6 +180,13 @@ export default {
 			forceRecreate: false,
 
 			saveStatusPolling: null,
+
+			emojiQuery: null,
+			emojiRange: null,
+			filteredEmojis: [],
+			navigatedEmojiIndex: 0,
+			emojiRect: null,
+			insertEmoji: () => {},
 		}
 	},
 	computed: {
@@ -354,13 +370,68 @@ export default {
 										return session?.userId ? session.userId : session?.guestName
 									},
 								}),
+								new Emoji({
+									// a list of suggested emojis
+									items: async () => {
+										await new Promise(resolve => {
+											setTimeout(resolve, 500)
+										})
+										return EMOJIS
+									},
+									// Is called when an emoji suggestion starts
+									onEnter: ({ items, query, range, command, virtualNode }) => {
+										this.emojiQuery = query
+										this.filteredEmojis = items
+										this.emojiRange = range
+										this.emojiRect = virtualNode.getBoundingClientRect()
+										// We save the command for inserting a selected emoji
+										// this allows us to call it inside of our custom popup
+										// via keyboard navigation and on click
+										this.insertEmoji = command
+									},
+									// Is called when an emoji suggestion has changed
+									onChange: ({ items, query, range, virtualNode }) => {
+										this.emojiQuery = query
+										this.filteredEmojis = items
+										this.emojiRange = range
+										this.navigatedEmojiIndex = 0
+										this.emojiRect = virtualNode.getBoundingClientRect()
+									},
+									// Is called when an emoji suggestion is canceled
+									onExit: () => {
+										// Reset all saved values
+										this.emojiQuery = null
+										this.filteredEmojis = []
+										this.emojiRange = null
+										this.navigatedEmojiIndex = 0
+										this.emojiRect = null
+									},
+									// Is called on every keyDown event while an emoji suggestion is active
+									onKeyDown: ({ event }) => {
+										if (event.key === 'ArrowUp') {
+											// Navigate to the previous item. If it's the first item, navigate to the last one
+											this.navigatedEmojiIndex = ((this.navigatedEmojiIndex + this.filteredEmojis.length) - 1) % this.filteredEmojis.length
+											return true
+										}
+										if (event.key === 'ArrowDown') {
+											// Navigate to the next item. If it's the last item, navigate to the first one
+											this.navigatedEmojiIndex = (this.navigatedEmojiIndex + 1) % this.filteredEmojis.length
+											return true
+										}
+										if (event.key === 'Enter') {
+											const emojiObject = this.filteredEmojis[this.navigatedEmojiIndex]
+											this.selectEmoji(emojiObject)
+											return true
+										}
+										return false
+									},
+								}),
 								new Keymap({
 									'Mod-s': () => {
 										this.syncService.save()
 										return true
 									},
 								}),
-								new Emoji(),
 							],
 							enableRichEditing: this.isRichEditor,
 							languages,
@@ -510,6 +581,19 @@ export default {
 					Vue.set(this.filteredSessions[sessionKey], 'isCurrent', true)
 				}
 			}
+		},
+
+		// We have to replace our suggestion text with an emoji, so it's
+		// important to pass also the position of the suggestion text.
+		selectEmoji(emojiObject) {
+			this.insertEmoji({
+				range: this.emojiRange,
+				attrs: {
+					id: emojiObject.short_name,
+					native: emojiObject.value,
+				},
+			})
+			this.tiptap.focus()
 		},
 	},
 }

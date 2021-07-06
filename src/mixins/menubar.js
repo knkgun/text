@@ -174,7 +174,7 @@ export default [
 		class: 'icon-emoji',
 		isActive: (isActive) => false,
 		action: (command, emojiObject) => {
-			return command.emoji(emojiObject)
+			return command.addEmoji(emojiObject)
 		},
 	},
 ]
