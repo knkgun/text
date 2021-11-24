@@ -22,7 +22,7 @@
 
 <template>
 	<div class="emoji-suggestion-list"
-		:class="{ 'is-active': showSuggestions }"
+		:class="{ 'is-active': showSuggestions, 'mobile': isMobile }"
 		:style="getPosition()">
 		<template v-if="hasResults">
 			<div v-for="(emojiObject, index) in filteredEmojis"
@@ -42,8 +42,13 @@
 
 <script>
 
+import isMobile from '../mixins/isMobile'
+
 export default {
 	name: 'EmojiSuggestions',
+	mixins: [
+		isMobile,
+	],
 	props: {
 		emojiQuery: {
 			type: String,
@@ -106,11 +111,17 @@ export default {
 		},
 
 		getPosition() {
+			const boxHeight = 200 // Estimated height of suggestion box
 			if (this.emojiRect && (this.emojiRect.x !== 0 || this.emojiRect.y !== 0)) {
 				this.position.left = `${this.emojiRect.x}px`
-				// Put emoji suggestions above cursor if there's not enough space
-				if (window.innerHeight - this.emojiRect.y < 200) {
-					this.position.bottom = `${window.innerHeight - this.emojiRect.y + 4}px`
+				if (window.innerHeight < boxHeight) {
+					// TODO: find a good way to display suggestion box. For now, put it below cursor.
+					this.position.top = `${this.emojiRect.y}px`
+					delete this.position.bottom
+				} else if (window.innerHeight - this.emojiRect.y < boxHeight) {
+					// Put emoji suggestions above cursor if there's not enough space at bottom.
+					// Add 6px for some space between text and suggestion box.
+					this.position.bottom = `${window.innerHeight - this.emojiRect.y + 6}px`
 					delete this.position.top
 				} else {
 					this.position.top = `${this.emojiRect.y}px`
@@ -125,10 +136,9 @@ export default {
 
 <style scoped lang="scss">
 	.emoji-suggestion-list {
-		// position: absolute;
 		position: fixed;
 		display: block !important;
-		z-index: 10020;
+		z-index: 10022;
 		background: var(--color-main-background-translucent);
 		box-shadow: 0 1px 5px var(--color-box-shadow);
 		border-radius: var(--border-radius-large);
@@ -137,20 +147,20 @@ export default {
 		min-width: 180px;
 		padding: 0.2rem;
 		margin-top: 24px;
-		margin-left: 10px;
 		visibility: hidden;
 		opacity: 0;
-		transform: translateX(-50%);
 		transition: opacity 0.2s, visibility 0.2s;
 
 		font-size: 0.8rem;
 		font-weight: bold;
 
-		// filter: drop-shadow(0 1px 10px var(--color-box-shadow));
-
 		&.is-active {
 			opacity: 1;
 			visibility: visible;
+		}
+
+		&.mobile {
+			max-width: 90vw;
 		}
 
 		&__no-results {
@@ -163,6 +173,11 @@ export default {
 			margin-bottom: 0.2rem;
 			opacity: 0.8;
 			cursor: pointer;
+
+			// Take care of long names
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 
 			&:last-child {
 				margin-bottom: 0;
