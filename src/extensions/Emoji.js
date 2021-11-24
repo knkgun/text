@@ -100,15 +100,14 @@ export default class Emoji extends Extension {
 					let results = searchItems.filter(item => item.short_names
 						.filter(name => name.toLowerCase() === query.toLowerCase()).length > 0)
 
-					// TODO: prevent duplicated results
 					// Second search for matches that start with query string
-					results = results.concat(searchItems.filter(item => item.short_names
-						.filter(name => name.toLowerCase().startsWith(query.toLowerCase())).length > 0))
+					results = [...new Set([...results, ...searchItems.filter(item => item.short_names
+						.filter(name => name.toLowerCase().startsWith(query.toLowerCase())).length > 0)])]
 
 					// If we still don't have enough, search for general matches
 					if (results.length < 5) {
-						results = results.concat(searchItems.filter(item => item.short_names
-							.filter(name => name.toLowerCase().includes(query.toLowerCase())).length > 0))
+						results = [...new Set([...results, ...searchItems.filter(item => item.short_names
+							.filter(name => name.toLowerCase().includes(query.toLowerCase())).length > 0)])]
 					}
 
 					return results.slice(0, 5)
