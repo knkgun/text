@@ -177,8 +177,8 @@ export default {
 
 		.icon-more, .icon-group, .icon-settings-dark {
 			background-color: var(--color-background-dark);
-			width: 36px;
-			height: 36px;
+			width: 44px;
+			height: 44px;
 			margin: 6px 6px 6px 0px;
 		}
 	}

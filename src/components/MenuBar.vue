@@ -346,7 +346,7 @@ export default {
 		display: flex;
 		justify-content: flex-end;
 		z-index: 10021; // above modal-header and menububble so menubar is always on top
-		background-color: var(--color-main-background-translucent);
+		background-color: rgba(255, 255, 255, 0.7);
 		-webkit-backdrop-filter: var(--background-blur);
 		backdrop-filter: var(--background-blur);
 		min-height: 50px; // important for mobile so that the buttons are always inside the container
