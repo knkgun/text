@@ -399,12 +399,7 @@ export default {
 									},
 									// Is called when an emoji suggestion is canceled
 									onExit: () => {
-										// Reset all saved values
-										this.emojiQuery = null
-										this.filteredEmojis = []
-										this.emojiRange = null
-										this.navigatedEmojiIndex = 0
-										this.emojiRect = null
+										this.resetEmoji()
 									},
 									// Is called on every keyDown event while an emoji suggestion is active
 									onKeyDown: ({ event }) => {
@@ -418,10 +413,13 @@ export default {
 											this.navigatedEmojiIndex = (this.navigatedEmojiIndex + 1) % this.filteredEmojis.length
 											return true
 										}
-										if (event.key === 'Enter') {
+										if (event.key === 'Enter' || event.key === 'Tab') {
 											const emojiObject = this.filteredEmojis[this.navigatedEmojiIndex]
 											this.selectEmoji(emojiObject)
 											return true
+										}
+										if (event.key === 'Escape') {
+											this.resetEmoji()
 										}
 										return false
 									},
@@ -594,6 +592,15 @@ export default {
 				},
 			})
 			this.tiptap.focus()
+		},
+
+		resetEmoji() {
+			// Reset all saved values
+			this.emojiQuery = null
+			this.filteredEmojis = []
+			this.emojiRange = null
+			this.navigatedEmojiIndex = 0
+			this.emojiRect = null
 		},
 	},
 }
