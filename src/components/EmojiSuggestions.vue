@@ -23,7 +23,7 @@
 <template>
 	<div class="emoji-suggestion-list"
 		:class="{ 'is-active': showSuggestions }"
-		:style="position">
+		:style="getPosition()">
 		<template v-if="hasResults">
 			<div v-for="(emojiObject, index) in filteredEmojis"
 				:key="emojiObject.id"
@@ -70,6 +70,14 @@ export default {
 			required: true,
 		},
 	},
+	data() {
+		return {
+			position: {
+				left: '0px',
+				top: '0px',
+			},
+		}
+	},
 	computed: {
 		hasResults() {
 			return this.filteredEmojis.length > 0
@@ -81,27 +89,6 @@ export default {
 
 		showSuggestions() {
 			return this.hasEmojiQuery || this.hasResults
-		},
-
-		position() {
-			const position = {
-				left: '0px',
-			}
-			if (this.emojiRect) {
-				position.left = `${this.emojiRect.x}px`
-				// Put emoji suggestions below cursor if there's enough space
-				if (window.innerHeight - this.emojiRect.y > 200) {
-					position.top = `${this.emojiRect.y}px`
-				} else {
-					// TODO: Fix y value for positioning on top
-					position.bottom = `${this.emojiRect.y}px`
-				}
-			} else {
-				position.top = '0px'
-			}
-			// TODO: Remove debugging statement
-			console.debug('x, y', this.emojiRect.x, this.emojiRect.y)
-			return position
 		},
 	},
 	methods: {
@@ -116,6 +103,21 @@ export default {
 				},
 			})
 			this.$emit('focus')
+		},
+
+		getPosition() {
+			if (this.emojiRect && (this.emojiRect.x !== 0 || this.emojiRect.y !== 0)) {
+				this.position.left = `${this.emojiRect.x}px`
+				// Put emoji suggestions above cursor if there's not enough space
+				if (window.innerHeight - this.emojiRect.y < 200) {
+					this.position.bottom = `${window.innerHeight - this.emojiRect.y + 4}px`
+					delete this.position.top
+				} else {
+					this.position.top = `${this.emojiRect.y}px`
+					delete this.position.bottom
+				}
+			}
+			return this.position
 		},
 	},
 }
