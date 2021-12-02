@@ -90,28 +90,7 @@ export default class Emoji extends Extension {
 				onChange: this.options.onChange,
 				onExit: this.options.onExit,
 				onKeyDown: this.options.onKeyDown,
-				onFilter: (searchItems, query) => {
-					if (!query) {
-						// Return first five emojis for empty searches
-						return searchItems.slice(0, 5)
-					}
-
-					// First search for exact matches
-					let results = searchItems.filter(item => item.short_names
-						.filter(name => name.toLowerCase() === query.toLowerCase()).length > 0)
-
-					// Second search for matches that start with query string
-					results = [...new Set([...results, ...searchItems.filter(item => item.short_names
-						.filter(name => name.toLowerCase().startsWith(query.toLowerCase())).length > 0)])]
-
-					// If we still don't have enough, search for general matches
-					if (results.length < 5) {
-						results = [...new Set([...results, ...searchItems.filter(item => item.short_names
-							.filter(name => name.toLowerCase().includes(query.toLowerCase())).length > 0)])]
-					}
-
-					return results.slice(0, 5)
-				},
+				onFilter: this.options.onFilter,
 				suggestionClass: this.options.suggestionClass,
 			}),
 		]

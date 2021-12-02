@@ -29,8 +29,8 @@
 				:key="emojiObject.id"
 				class="emoji-suggestion-list__item"
 				:class="{ 'is-selected': navigatedEmojiIndex === index }"
-				@click="selectEmoji(emojiObject)">
-				{{ emojiObject.value }} {{ emojiObject.short_name }}
+				@click="$emit('select-emoji', emojiObject)">
+				{{ emojiObject.native }} {{ emojiObject.short_name }}
 			</div>
 		</template>
 		<div v-else
@@ -54,10 +54,6 @@ export default {
 			type: String,
 			required: true,
 		},
-		emojiRange: {
-			type: Object,
-			required: true,
-		},
 		filteredEmojis: {
 			type: Array,
 			required: true,
@@ -68,10 +64,6 @@ export default {
 		},
 		emojiRect: {
 			type: Object,
-			required: true,
-		},
-		insertEmoji: {
-			type: Function,
 			required: true,
 		},
 	},
@@ -97,19 +89,6 @@ export default {
 		},
 	},
 	methods: {
-		// We have to replace our suggestion text with an emoji, so it's
-		// important to pass also the position of the suggestion text.
-		selectEmoji(emojiObject) {
-			this.insertEmoji({
-				range: this.emojiRange,
-				attrs: {
-					id: emojiObject.short_name,
-					native: emojiObject.value,
-				},
-			})
-			this.$emit('focus')
-		},
-
 		getPosition() {
 			const boxHeight = 200 // Estimated height of suggestion box
 			if (this.emojiRect && (this.emojiRect.x !== 0 || this.emojiRect.y !== 0)) {

@@ -70,13 +70,915 @@
  * @license MIT
  */
 
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!./index.scss */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./ActionButton.vue?vue&type=style&index=0&id=2e929b4f&lang=scss&scoped=true& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Actions.vue?vue&type=style&index=0&id=4f45864b&lang=scss&scoped=true& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Avatar.vue?vue&type=style&index=0&id=100e3b6f&scoped=true&lang=scss& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./EmojiPicker.vue?vue&type=style&index=0&lang=scss& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./MentionBubble.vue?vue&type=style&index=0&id=69f40ec8&lang=scss&scoped=true& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=style&index=0&id=47db75aa&lang=scss&scoped=true& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Popover.vue?vue&type=style&index=0&lang=scss& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenu.vue?vue&type=style&index=0&id=0a0eb719&lang=scss&scoped=true& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenuItem.vue?vue&type=style&index=1&id=512ea768&lang=scss&scoped=true& */
+
+/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenuItem.vue?vue&type=style&index=0&id=512ea768&scoped=true&lang=css& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./ActionButton.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./Actions.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./Avatar.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./EmojiPicker.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./MentionBubble.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./Popover.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenu.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenuItem.vue?vue&type=script&lang=js& */
+
+/*! -!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/emoji-mart-vue-fast/css/emoji-mart.css */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./ActionButton.vue?vue&type=style&index=0&id=2e929b4f&lang=scss&scoped=true& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Actions.vue?vue&type=style&index=0&id=4f45864b&lang=scss&scoped=true& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Avatar.vue?vue&type=style&index=0&id=100e3b6f&scoped=true&lang=scss& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./EmojiPicker.vue?vue&type=style&index=0&lang=scss& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./MentionBubble.vue?vue&type=style&index=0&id=69f40ec8&lang=scss&scoped=true& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=style&index=0&id=47db75aa&lang=scss&scoped=true& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Popover.vue?vue&type=style&index=0&lang=scss& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenu.vue?vue&type=style&index=0&id=0a0eb719&lang=scss&scoped=true& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/resolve-url-loader!../../../node_modules/sass-loader/dist/cjs.js??ref--1-3!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenuItem.vue?vue&type=style&index=1&id=512ea768&lang=scss&scoped=true& */
+
+/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenuItem.vue?vue&type=style&index=0&id=512ea768&scoped=true&lang=css& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ActionButton.vue?vue&type=template&id=2e929b4f&scoped=true& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Actions.vue?vue&type=template&id=4f45864b&scoped=true& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Avatar.vue?vue&type=template&id=100e3b6f&scoped=true& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./EmojiPicker.vue?vue&type=template&id=559c64b9& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./MentionBubble.vue?vue&type=template&id=69f40ec8&scoped=true& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=template&id=47db75aa&scoped=true& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Popover.vue?vue&type=template&id=45093cca& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenu.vue?vue&type=template&id=0a0eb719&scoped=true& */
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./PopoverMenuItem.vue?vue&type=template&id=512ea768&scoped=true& */
+
+/*! ../../../node_modules/css-loader/dist/runtime/api.js */
+
+/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */
+
+/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */
+
+/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
+
+/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */
+
+/*! ../../assets/status-icons/user-status-away.svg */
+
+/*! ../../assets/status-icons/user-status-dnd.svg */
+
+/*! ../../assets/status-icons/user-status-online.svg */
+
+/*! ../../components/RichContenteditable/MentionBubble */
+
+/*! ../../css-loader/dist/runtime/api.js */
+
+/*! ../../css-loader/dist/runtime/cssWithMappingToString.js */
+
+/*! ../../directives/Tooltip */
+
+/*! ../../functions/usernameToColor */
+
+/*! ../../l10n */
+
+/*! ../../mixins */
+
+/*! ../../mixins/actionText */
+
+/*! ../../mixins/l10n */
+
+/*! ../../utils/GenColors */
+
+/*! ../../utils/GenRandomId */
+
+/*! ../../utils/IsMobileState */
+
+/*! ../../utils/Linkify */
+
+/*! ../../utils/ScopeComponent */
+
+/*! ../../utils/Timer */
+
+/*! ../ActionButton */
+
+/*! ../Actions */
+
+/*! ../Popover */
+
+/*! ../Popover/Popover */
+
+/*! ../PopoverMenu */
+
+/*! ../l10n */
+
+/*! ../utils/GetParent */
+
+/*! ./ActionButton */
+
+/*! ./ActionButton.vue?vue&type=custom&index=0&blockType=docs */
+
+/*! ./ActionButton.vue?vue&type=script&lang=js& */
+
+/*! ./ActionButton.vue?vue&type=style&index=0&id=2e929b4f&lang=scss&scoped=true& */
+
+/*! ./ActionButton.vue?vue&type=template&id=2e929b4f&scoped=true& */
+
+/*! ./Actions */
+
+/*! ./Actions.vue?vue&type=custom&index=0&blockType=docs */
+
+/*! ./Actions.vue?vue&type=script&lang=js& */
+
+/*! ./Actions.vue?vue&type=style&index=0&id=4f45864b&lang=scss&scoped=true& */
+
+/*! ./Actions.vue?vue&type=template&id=4f45864b&scoped=true& */
+
+/*! ./Avatar */
+
+/*! ./Avatar.vue?vue&type=custom&index=0&blockType=docs */
+
+/*! ./Avatar.vue?vue&type=script&lang=js& */
+
+/*! ./Avatar.vue?vue&type=style&index=0&id=100e3b6f&scoped=true&lang=scss& */
+
+/*! ./Avatar.vue?vue&type=template&id=100e3b6f&scoped=true& */
+
+/*! ./EmojiPicker */
+
+/*! ./EmojiPicker.vue?vue&type=custom&index=0&blockType=docs */
+
+/*! ./EmojiPicker.vue?vue&type=script&lang=js& */
+
+/*! ./EmojiPicker.vue?vue&type=style&index=0&lang=scss& */
+
+/*! ./EmojiPicker.vue?vue&type=template&id=559c64b9& */
+
+/*! ./MentionBubble.vue?vue&type=script&lang=js& */
+
+/*! ./MentionBubble.vue?vue&type=style&index=0&id=69f40ec8&lang=scss&scoped=true& */
+
+/*! ./MentionBubble.vue?vue&type=template&id=69f40ec8&scoped=true& */
+
+/*! ./Modal */
+
+/*! ./Modal.vue?vue&type=custom&index=0&blockType=docs */
+
+/*! ./Modal.vue?vue&type=script&lang=js& */
+
+/*! ./Modal.vue?vue&type=style&index=0&id=47db75aa&lang=scss&scoped=true& */
+
+/*! ./Modal.vue?vue&type=template&id=47db75aa&scoped=true& */
+
+/*! ./Popover */
+
+/*! ./Popover.vue?vue&type=custom&index=0&blockType=docs */
+
+/*! ./Popover.vue?vue&type=script&lang=js& */
+
+/*! ./Popover.vue?vue&type=style&index=0&lang=scss& */
+
+/*! ./Popover.vue?vue&type=template&id=45093cca& */
+
+/*! ./PopoverMenu */
+
+/*! ./PopoverMenu.vue?vue&type=custom&index=0&blockType=docs */
+
+/*! ./PopoverMenu.vue?vue&type=script&lang=js& */
+
+/*! ./PopoverMenu.vue?vue&type=style&index=0&id=0a0eb719&lang=scss&scoped=true& */
+
+/*! ./PopoverMenu.vue?vue&type=template&id=0a0eb719&scoped=true& */
+
+/*! ./PopoverMenuItem */
+
+/*! ./PopoverMenuItem.vue?vue&type=script&lang=js& */
+
+/*! ./PopoverMenuItem.vue?vue&type=style&index=0&id=512ea768&scoped=true&lang=css& */
+
+/*! ./PopoverMenuItem.vue?vue&type=style&index=1&id=512ea768&lang=scss&scoped=true& */
+
+/*! ./PopoverMenuItem.vue?vue&type=template&id=512ea768&scoped=true& */
+
+/*! ./actionGlobal */
+
+/*! ./emoji */
+
+/*! ./excludeClickOutsideClasses */
+
+/*! ./index.scss */
+
+/*! ./isFullscreen */
+
+/*! ./isMobile */
+
+/*! ./richEditor */
+
+/*! ./userStatus */
+
+/*! ./usernameToColor */
+
+/*! @nextcloud/auth */
+
+/*! @nextcloud/axios */
+
+/*! @nextcloud/browser-storage */
+
+/*! @nextcloud/capabilities */
+
+/*! @nextcloud/event-bus */
+
+/*! @nextcloud/l10n/dist/gettext */
+
+/*! @nextcloud/router */
+
 /*! Hammer.JS - v2.0.7 - 2016-04-22
  * http://hammerjs.github.io/
  *
  * Copyright (c) 2016 Jorik Tangelder;
  * Licensed under the MIT license */
 
+/*! emoji-mart-vue-fast */
+
+/*! emoji-mart-vue-fast/data/all.json */
+
+/*! emoji-mart-vue-fast/src */
+
+/*! emoji-mart-vue-fast/src/utils/frequently */
+
+/*! escape-html */
+
+/*! exports provided: IsMobileState */
+
+/*! exports provided: USERID_REGEX, USERID_REGEX_WITH_SPACE, default */
+
+/*! exports provided: default */
+
+/*! exports provided: emojiSearch, addRecent */
+
+/*! exports provided: emojiSearch, addRecent, default */
+
+/*! exports provided: excludeClickOutsideClasses, isFullscreen, isMobile, richEditor, userStatus */
+
+/*! exports provided: render, staticRenderFns */
+
+/*! exports provided: t, n */
+
+/*! hammerjs */
+
 /*! https://mths.be/punycode v1.4.1 by @mathias */
+
+/*! linkify-string */
+
+/*! md5 */
+
+/*! no exports provided */
+
+/*! no static exports found */
+
+/*! striptags */
+
+/*! v-click-outside */
+
+/*! v-tooltip */
+
+/*! vue */
+
+/*! vue-material-design-icons/ChevronLeft */
+
+/*! vue-material-design-icons/ChevronRight */
+
+/*! vue-material-design-icons/Close */
+
+/*! vue-material-design-icons/DotsHorizontal */
+
+/*! vue-material-design-icons/Pause */
+
+/*! vue-material-design-icons/Play */
+
+/*!*********************!*\
+  !*** ./src/l10n.js ***!
+  \*********************/
+
+/*!**********************!*\
+  !*** external "md5" ***!
+  \**********************/
+
+/*!**********************!*\
+  !*** external "vue" ***!
+  \**********************/
+
+/*!***************************!*\
+  !*** external "hammerjs" ***!
+  \***************************/
+
+/*!****************************!*\
+  !*** ./src/mixins/l10n.js ***!
+  \****************************/
+
+/*!****************************!*\
+  !*** ./src/utils/Timer.js ***!
+  \****************************/
+
+/*!****************************!*\
+  !*** external "striptags" ***!
+  \****************************/
+
+/*!****************************!*\
+  !*** external "v-tooltip" ***!
+  \****************************/
+
+/*!*****************************!*\
+  !*** ./src/mixins/index.js ***!
+  \*****************************/
+
+/*!******************************!*\
+  !*** ./src/utils/Linkify.js ***!
+  \******************************/
+
+/*!******************************!*\
+  !*** external "escape-html" ***!
+  \******************************/
+
+/*!********************************!*\
+  !*** ./src/utils/GenColors.js ***!
+  \********************************/
+
+/*!********************************!*\
+  !*** ./src/utils/GetParent.js ***!
+  \********************************/
+
+/*!*********************************!*\
+  !*** external "linkify-string" ***!
+  \*********************************/
+
+/*!**********************************!*\
+  !*** ./src/mixins/actionText.js ***!
+  \**********************************/
+
+/*!**********************************!*\
+  !*** ./src/mixins/userStatus.js ***!
+  \**********************************/
+
+/*!**********************************!*\
+  !*** ./src/utils/GenRandomId.js ***!
+  \**********************************/
+
+/*!**********************************!*\
+  !*** external "@nextcloud/auth" ***!
+  \**********************************/
+
+/*!**********************************!*\
+  !*** external "v-click-outside" ***!
+  \**********************************/
+
+/*!***********************************!*\
+  !*** external "@nextcloud/axios" ***!
+  \***********************************/
+
+/*!************************************!*\
+  !*** ./src/mixins/actionGlobal.js ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/utils/IsMobileState.js ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** external "@nextcloud/router" ***!
+  \************************************/
+
+/*!*************************************!*\
+  !*** ./src/utils/ScopeComponent.js ***!
+  \*************************************/
+
+/*!**************************************!*\
+  !*** ./src/functions/emoji/emoji.js ***!
+  \**************************************/
+
+/*!**************************************!*\
+  !*** ./src/functions/emoji/index.js ***!
+  \**************************************/
+
+/*!**************************************!*\
+  !*** ./src/mixins/isMobile/index.js ***!
+  \**************************************/
+
+/*!**************************************!*\
+  !*** external "emoji-mart-vue-fast" ***!
+  \**************************************/
+
+/*!***************************************!*\
+  !*** ./src/components/Modal/index.js ***!
+  \***************************************/
+
+/*!***************************************!*\
+  !*** external "@nextcloud/event-bus" ***!
+  \***************************************/
+
+/*!****************************************!*\
+  !*** ./src/components/Avatar/index.js ***!
+  \****************************************/
+
+/*!****************************************!*\
+  !*** ./src/components/Modal/Modal.vue ***!
+  \****************************************/
+
+/*!****************************************!*\
+  !*** ./src/mixins/richEditor/index.js ***!
+  \****************************************/
+
+/*!*****************************************!*\
+  !*** ./src/components/Actions/index.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./src/components/Popover/index.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./src/directives/Tooltip/index.js ***!
+  \*****************************************/
+
+/*!******************************************!*\
+  !*** ./src/components/Avatar/Avatar.vue ***!
+  \******************************************/
+
+/*!******************************************!*\
+  !*** ./src/mixins/isFullscreen/index.js ***!
+  \******************************************/
+
+/*!******************************************!*\
+  !*** external "@nextcloud/capabilities" ***!
+  \******************************************/
+
+/*!******************************************!*\
+  !*** external "emoji-mart-vue-fast/src" ***!
+  \******************************************/
+
+/*!*******************************************!*\
+  !*** ./src/directives/Tooltip/index.scss ***!
+  \*******************************************/
+
+/*!********************************************!*\
+  !*** ./src/components/Actions/Actions.vue ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./src/components/Popover/Popover.vue ***!
+  \********************************************/
+
+/*!*********************************************!*\
+  !*** ./src/components/EmojiPicker/index.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./src/components/PopoverMenu/index.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** external "@nextcloud/browser-storage" ***!
+  \*********************************************/
+
+/*!**********************************************!*\
+  !*** ./src/components/ActionButton/index.js ***!
+  \**********************************************/
+
+/*!***********************************************!*\
+  !*** external "@nextcloud/l10n/dist/gettext" ***!
+  \***********************************************/
+
+/*!************************************************!*\
+  !*** ./src/functions/usernameToColor/index.js ***!
+  \************************************************/
+
+/*!*************************************************!*\
+  !*** external "vue-material-design-icons/Play" ***!
+  \*************************************************/
+
+/*!**************************************************!*\
+  !*** external "vue-material-design-icons/Close" ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** external "vue-material-design-icons/Pause" ***!
+  \**************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/components/EmojiPicker/EmojiPicker.vue ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenu.vue ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** external "emoji-mart-vue-fast/data/all.json" ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/assets/status-icons/user-status-dnd.svg ***!
+  \*****************************************************/
+
+/*!******************************************************!*\
+  !*** ./src/assets/status-icons/user-status-away.svg ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./src/components/ActionButton/ActionButton.vue ***!
+  \******************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./src/assets/status-icons/user-status-online.svg ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenuItem.vue ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./src/mixins/excludeClickOutsideClasses/index.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** external "vue-material-design-icons/ChevronLeft" ***!
+  \********************************************************/
+
+/*!*********************************************************!*\
+  !*** external "vue-material-design-icons/ChevronRight" ***!
+  \*********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./src/functions/usernameToColor/usernameToColor.js ***!
+  \**********************************************************/
+
+/*!***********************************************************!*\
+  !*** external "emoji-mart-vue-fast/src/utils/frequently" ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** external "vue-material-design-icons/DotsHorizontal" ***!
+  \***********************************************************/
+
+/*!**************************************************************!*\
+  !*** ./src/components/RichContenteditable/MentionBubble.vue ***!
+  \**************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./src/components/Modal/Modal.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./src/components/Avatar/Avatar.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./src/components/Actions/Actions.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./src/components/Popover/Popover.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/cssWithMappingToString.js ***!
+  \************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./src/components/Popover/Popover.vue?vue&type=template&id=45093cca& ***!
+  \***************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./src/components/EmojiPicker/EmojiPicker.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenu.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./src/components/Popover/Popover.vue?vue&type=style&index=0&lang=scss& ***!
+  \******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./src/components/ActionButton/ActionButton.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./src/components/Modal/Modal.vue?vue&type=custom&index=0&blockType=docs ***!
+  \*******************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./src/components/Avatar/Avatar.vue?vue&type=custom&index=0&blockType=docs ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./src/components/Actions/Actions.vue?vue&type=custom&index=0&blockType=docs ***!
+  \***********************************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./src/components/EmojiPicker/EmojiPicker.vue?vue&type=template&id=559c64b9& ***!
+  \***********************************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./src/components/Modal/Modal.vue?vue&type=template&id=47db75aa&scoped=true& ***!
+  \***********************************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./src/components/Popover/Popover.vue?vue&type=custom&index=0&blockType=docs ***!
+  \***********************************************************************************/
+
+/*!*************************************************************************************!*\
+  !*** ./src/components/Avatar/Avatar.vue?vue&type=template&id=100e3b6f&scoped=true& ***!
+  \*************************************************************************************/
+
+/*!**************************************************************************************!*\
+  !*** ./src/components/EmojiPicker/EmojiPicker.vue?vue&type=style&index=0&lang=scss& ***!
+  \**************************************************************************************/
+
+/*!***************************************************************************************!*\
+  !*** ./src/components/Actions/Actions.vue?vue&type=template&id=4f45864b&scoped=true& ***!
+  \***************************************************************************************/
+
+/*!***************************************************************************************!*\
+  !*** ./src/components/RichContenteditable/MentionBubble.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
+
+/*!*******************************************************************************************!*\
+  !*** ./src/components/EmojiPicker/EmojiPicker.vue?vue&type=custom&index=0&blockType=docs ***!
+  \*******************************************************************************************/
+
+/*!*******************************************************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenu.vue?vue&type=custom&index=0&blockType=docs ***!
+  \*******************************************************************************************/
+
+/*!*********************************************************************************************!*\
+  !*** ./src/components/ActionButton/ActionButton.vue?vue&type=custom&index=0&blockType=docs ***!
+  \*********************************************************************************************/
+
+/*!***********************************************************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenu.vue?vue&type=template&id=0a0eb719&scoped=true& ***!
+  \***********************************************************************************************/
+
+/*!*************************************************************************************************!*\
+  !*** ./src/components/ActionButton/ActionButton.vue?vue&type=template&id=2e929b4f&scoped=true& ***!
+  \*************************************************************************************************/
+
+/*!**************************************************************************************************!*\
+  !*** ./src/components/Modal/Modal.vue?vue&type=style&index=0&id=47db75aa&lang=scss&scoped=true& ***!
+  \**************************************************************************************************/
+
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/emoji-mart-vue-fast/css/emoji-mart.css ***!
+  \***************************************************************************************************/
+
+/*!***************************************************************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=template&id=512ea768&scoped=true& ***!
+  \***************************************************************************************************/
+
+/*!****************************************************************************************************!*\
+  !*** ./src/components/Avatar/Avatar.vue?vue&type=style&index=0&id=100e3b6f&scoped=true&lang=scss& ***!
+  \****************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./src/components/Actions/Actions.vue?vue&type=style&index=0&id=4f45864b&lang=scss&scoped=true& ***!
+  \******************************************************************************************************/
+
+/*!*********************************************************************************************************!*\
+  !*** ./src/components/RichContenteditable/MentionBubble.vue?vue&type=template&id=69f40ec8&scoped=true& ***!
+  \*********************************************************************************************************/
+
+/*!**************************************************************************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenu.vue?vue&type=style&index=0&id=0a0eb719&lang=scss&scoped=true& ***!
+  \**************************************************************************************************************/
+
+/*!****************************************************************************************************************!*\
+  !*** ./src/components/ActionButton/ActionButton.vue?vue&type=style&index=0&id=2e929b4f&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************/
+
+/*!*****************************************************************************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=style&index=0&id=512ea768&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************/
+
+/*!******************************************************************************************************************!*\
+  !*** ./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=style&index=1&id=512ea768&lang=scss&scoped=true& ***!
+  \******************************************************************************************************************/
+
+/*!************************************************************************************************************************!*\
+  !*** ./src/components/RichContenteditable/MentionBubble.vue?vue&type=style&index=0&id=69f40ec8&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Modal/Modal.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Avatar/Avatar.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Actions/Actions.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Popover/Popover.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/EmojiPicker.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenu.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ActionButton/ActionButton.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./src/directives/Tooltip/index.scss ***!
+  \********************************************************************************************************************************************************************/
+
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/RichContenteditable/MentionBubble.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Popover/Popover.vue?vue&type=template&id=45093cca& ***!
+  \*********************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/EmojiPicker.vue?vue&type=template&id=559c64b9& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Modal/Modal.vue?vue&type=template&id=47db75aa&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Avatar/Avatar.vue?vue&type=template&id=100e3b6f&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Actions/Actions.vue?vue&type=template&id=4f45864b&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenu.vue?vue&type=template&id=0a0eb719&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ActionButton/ActionButton.vue?vue&type=template&id=2e929b4f&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=template&id=512ea768&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/RichContenteditable/MentionBubble.vue?vue&type=template&id=69f40ec8&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=style&index=0&id=512ea768&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=style&index=0&id=512ea768&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Popover/Popover.vue?vue&type=style&index=0&lang=scss& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/EmojiPicker.vue?vue&type=style&index=0&lang=scss& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Modal/Modal.vue?vue&type=style&index=0&id=47db75aa&lang=scss&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Avatar/Avatar.vue?vue&type=style&index=0&id=100e3b6f&scoped=true&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Actions/Actions.vue?vue&type=style&index=0&id=4f45864b&lang=scss&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenu.vue?vue&type=style&index=0&id=0a0eb719&lang=scss&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ActionButton/ActionButton.vue?vue&type=style&index=0&id=2e929b4f&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=style&index=1&id=512ea768&lang=scss&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Popover/Popover.vue?vue&type=style&index=0&lang=scss& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/RichContenteditable/MentionBubble.vue?vue&type=style&index=0&id=69f40ec8&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/EmojiPicker/EmojiPicker.vue?vue&type=style&index=0&lang=scss& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Modal/Modal.vue?vue&type=style&index=0&id=47db75aa&lang=scss&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Avatar/Avatar.vue?vue&type=style&index=0&id=100e3b6f&scoped=true&lang=scss& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Actions/Actions.vue?vue&type=style&index=0&id=4f45864b&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenu.vue?vue&type=style&index=0&id=0a0eb719&lang=scss&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ActionButton/ActionButton.vue?vue&type=style&index=0&id=2e929b4f&lang=scss&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/PopoverMenu/PopoverMenuItem.vue?vue&type=style&index=1&id=512ea768&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js??ref--1-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/RichContenteditable/MentionBubble.vue?vue&type=style&index=0&id=69f40ec8&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
 /**
  * @copyright Copyright (c) 2018 John Molakvoæ <skjnldsv@protonmail.com>
