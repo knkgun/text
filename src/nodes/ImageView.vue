@@ -260,9 +260,8 @@ export default {
 
 	.image__view {
 		text-align: center;
-
-		.image__main {
-			max-height: 40vh;
+		img {
+			width: 100%;
 		}
 	}
 
