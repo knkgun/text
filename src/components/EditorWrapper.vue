@@ -182,7 +182,7 @@ export default {
 			return this.$store.state.showAuthorAnnotations
 		},
 		lastSavedStatus() {
-			return this.dirtyStateIndicator ? t('text', 'Saving …') : t('text', 'Saved')
+			return this.hasConnectionIssue ? t('text', 'Offline, changes will be saved when online') : this.dirtyStateIndicator ? t('text', 'Saving …') : t('text', 'Saved')
 		},
 		lastSavedStatusClass() {
 			return this.syncError && this.lastSavedString !== '' ? 'error' : ''
